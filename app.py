@@ -26,7 +26,7 @@ time.sleep(2.0)
 
 def core_detector():
     global face_stream, food_stream, output_face_frame, output_food_frame
-    sensitivity = 0.75
+    sensitivity = 0.70
     with tf.Graph().as_default():
         gpu_options = tf.compat.v1.GPUOptions(per_process_gpu_memory_fraction=0.6)
         sess = tf.compat.v1.Session(config=tf.compat.v1.ConfigProto(gpu_options=gpu_options, log_device_placement=False))
